@@ -1,0 +1,1 @@
+function updateInternet(){const e=document.getElementById('internetStatus');if(!e)return;const on=navigator.onLine;e.textContent=on?'Online':'Offline';e.className='badge p-2 '+(on?'bg-success':'bg-danger')}window.addEventListener('online',updateInternet);window.addEventListener('offline',updateInternet);document.addEventListener('DOMContentLoaded',updateInternet);
